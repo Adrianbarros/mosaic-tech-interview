@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Input } from '../Components/Input';
 import { TotalFoodAmount } from '../Utils/helpers';
+import '../Styles/home.css'
+
 
 interface FoodAmounts {
     small: number,
@@ -30,26 +32,32 @@ export const Home = () => {
     }
 
     return (
-        <div data-testid="food-calculator">
-            <h1>Dog Food Calculator</h1>
-            <form onSubmit={(e) => { handleSubmit(e) }}>
-                <h3>How many small dogs?</h3>
-                <Input name={"small"} value={data.small} onChange={handleChange} />
-                <h3>How many medium size dogs?</h3>
-                <Input name={"medium"} value={data.medium} onChange={handleChange} />
-                <h3>How many large dogs?</h3>
-                <Input name={"large"} value={data.large} onChange={handleChange} />
-                <h3>Any leftover from last month?(lb)</h3>
-                <Input name={"leftOver"} value={data.leftOver} onChange={handleChange} />
-                <button type={"submit"} data-testid="calculate-button">Calculate</button>
-            </form>
+        <>
+            <div className="food-calculator" data-testid="food-calculator">
+                <div className='container'>
+                    <div className='title'>Dog Food Calculator</div>
+                    <form onSubmit={(e) => { handleSubmit(e) }}>
+                        <h3>How many small dogs?</h3>
+                        <Input name={"small"} value={data.small} onChange={handleChange} />
+                        <h3>How many medium size dogs?</h3>
+                        <Input name={"medium"} value={data.medium} onChange={handleChange} />
+                        <h3>How many large dogs?</h3>
+                        <Input name={"large"} value={data.large} onChange={handleChange} />
+                        <h3>Any leftover from last month?(lb)</h3>
+                        <Input name={"leftOver"} value={data.leftOver} onChange={handleChange} />
+                        <button className='button' type={"submit"} data-testid="calculate-button">Calculate</button>
+                    </form>
+                    {total !== null &&
+                        <div className='response' data-testid="result-text">
+                            <div className='response-text'> {resultTxt}</div>
+                        </div>
+                    }
+                </div>
 
-            {total !== null &&
-                <h1 data-testid="result-text">
-                    {resultTxt}
-                </h1>
-            }
-        </div>
+
+            </div>
+
+        </>
     )
 }
 
