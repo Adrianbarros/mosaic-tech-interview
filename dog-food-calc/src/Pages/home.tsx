@@ -18,7 +18,8 @@ export const Home = () => {
         large: 0,
         leftOver: 0,
     })
-    const resultTxt = total && total > 0 ? `You should order ${total}lb of food` : `You do not need to order any food!`
+    let resultTxt = `You do not need to order any food!`
+    resultTxt = total && total > 0 ? `You should order ${total}lb of food` : `You do not need to order any food!`
 
     const handleChange = (e: any) => {
         setData({ ...data, [e.target.name]: e.target.value })
@@ -29,7 +30,7 @@ export const Home = () => {
     }
 
     return (
-        <div>
+        <div data-testid="food-calculator">
             <h1>Dog Food Calculator</h1>
             <form onSubmit={(e) => { handleSubmit(e) }}>
                 <h3>How many small dogs?</h3>
@@ -40,11 +41,11 @@ export const Home = () => {
                 <Input name={"large"} value={data.large} onChange={handleChange} />
                 <h3>Any leftover from last month?(lb)</h3>
                 <Input name={"leftOver"} value={data.leftOver} onChange={handleChange} />
-                <button type={"submit"}>Submit</button>
+                <button type={"submit"} data-testid="calculate-button">Calculate</button>
             </form>
 
-            {total &&
-                <h1>
+            {total !== null &&
+                <h1 data-testid="result-text">
                     {resultTxt}
                 </h1>
             }

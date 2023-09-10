@@ -7,7 +7,7 @@ interface Props {
 }
 export const Input = ({ name, onChange }: Props) => {
     return (
-        <div>
-            <input onChange={onChange} name={name} type="number" />
+        <div data-testid="input-component">
+            <input onChange={onChange} name={name} type="number" data-testid={`${name}-input`} />
         </div>)
 }
