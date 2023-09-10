@@ -27,8 +27,7 @@ This will get the App running and on http://localhost:3000/ will be the calculat
 
 Here is a peak!
 (Again the design was not the main focus, I know its pretty simple)
-![](src/media/calcScreenshot.png)
-![](src/media/flowGif.png)
+![](dog-food-calc/src/Media/flowGif.gif)
 
 
 ## How To Test
