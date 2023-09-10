@@ -37,4 +37,4 @@ I am using Jest and testing library to do unit testing for both the funtion and 
 ```
 npm test
 ```
-![](dog-food-calc/src/media/testScreenshot.png)
+![](dog-food-calc/src/Media/testScreenshot.png)
