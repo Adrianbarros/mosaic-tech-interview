@@ -2,14 +2,10 @@ import React, { useState } from 'react';
 import { Input } from '../Components/Input';
 import { TotalFoodAmount } from '../Utils/helpers';
 import '../Styles/home.css'
+import { FoodAmounts } from '../Types/foodCalcTypes';
 
 
-interface FoodAmounts {
-    small: number,
-    medium: number,
-    large: number,
-    leftOver: number,
-}
+
 
 export const Home = () => {
 

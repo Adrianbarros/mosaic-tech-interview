@@ -1,4 +1,4 @@
-
+import { FoodAmounts } from "../Types/foodCalcTypes"
 const amountByDog = {
     small: 10,
     medium: 20,
@@ -7,7 +7,7 @@ const amountByDog = {
 
 const extraPercentage = 20
 
-export const TotalFoodAmount = (data: any) => {
+export const TotalFoodAmount = (data: FoodAmounts) => {
     if (!data) {
         return null
     }

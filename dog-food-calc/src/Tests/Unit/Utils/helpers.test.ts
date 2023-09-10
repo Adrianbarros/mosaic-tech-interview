@@ -29,7 +29,5 @@ describe('Helpers Functions', () => {
         expect(TotalFoodAmount(mockZeroData)).toEqual(0)
         expect(TotalFoodAmount(leftOverEqualsAmount)).toEqual(0)
     })
-    it('Does not returns anything if theres no data', () => {
-        expect(TotalFoodAmount(null)).toBeNull()
-    })
+
 })
