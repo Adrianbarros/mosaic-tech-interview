@@ -2,7 +2,7 @@
 
 
 Welcome to the team at Mosaic! Here is an overview of the project.
-I Hope this is can prove a bit of my technical skills. Thank you for making the time to check my work and hopefully consider it sufficient. 
+I hope this can prove a bit of my technical skills. Thank you for making the time to check my work and hopefully consider it sufficient. 
 
 ---
 
@@ -28,6 +28,9 @@ This will get the App running and on http://localhost:3000/ will be the calculat
 Here is a peak!
 (Again the design was not the main focus, I know its pretty simple)
 ![](dog-food-calc/src/Media/flowGif.gif)
+
+>UPDATE: I took the liberty to use some of the styles and colors found in the company's website to update the styles just to give it color. 
+![](dog-food-calc/src/Media/updatedScreenshot.png)
 
 
 ## How To Test

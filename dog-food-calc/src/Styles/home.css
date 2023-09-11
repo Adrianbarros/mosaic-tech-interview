@@ -1,6 +1,5 @@
 .food-calculator {
     display: flex;
-    width: 100rem;
     justify-content: center;
 
 
@@ -14,13 +13,21 @@
 
 
         .title {
-            color: #444;
+            color: #45bfea;
             margin: 0;
             padding: 0px 0px 6px 0px;
             font-size: 51px;
             line-height: 44px;
             letter-spacing: -2px;
             font-weight: bold;
+            font-family: "__Cera_dd97e8,__Cera_Fallback_dd97e8";
+        }
+
+        .question {
+            font-family: "__Cera_dd97e8,__Cera_Fallback_dd97e8";
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 20px;
         }
 
         .input-field {
@@ -28,8 +35,8 @@
             border-radius: 10px;
             height: 10px;
             width: 300px;
-            background-color: #e0e3e6;
-            box-shadow: 0 0 0 2px #616467;
+            background-color: #f6f6f6;
+            box-shadow: 0 0 0 2px #355094;
             border: 1px solid transparent;
         }
 
@@ -44,7 +51,8 @@
             font-weight: 700;
             text-align: center;
             padding: 16px 14px 18px;
-            box-shadow: inset 0 0 0 2px #616467;
+            color: #fff;
+            background-color: #45bfea;
             height: 48px;
         }
 
@@ -56,8 +64,9 @@
             margin-top: 20px;
 
             .response-text {
+                font-family: "__Cera_dd97e8,__Cera_Fallback_dd97e8";
                 font-size: 20px;
-                text-align: center;
+                font-weight: 600;
 
             }
 

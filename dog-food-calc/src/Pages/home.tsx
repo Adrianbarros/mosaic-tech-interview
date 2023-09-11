@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Input } from '../Components/Input';
 import { TotalFoodAmount } from '../Utils/helpers';
-import '../Styles/home.css'
+import '../Styles/home.css';
 import { FoodAmounts } from '../Types/foodCalcTypes';
 
 
@@ -33,13 +33,13 @@ export const Home = () => {
                 <div className='container'>
                     <div className='title'>Dog Food Calculator</div>
                     <form onSubmit={(e) => { handleSubmit(e) }}>
-                        <h3>How many small dogs?</h3>
+                        <div className='question'>How many small dogs?</div>
                         <Input name={"small"} value={data.small} onChange={handleChange} />
-                        <h3>How many medium size dogs?</h3>
+                        <div className='question'>How many medium size dogs?</div>
                         <Input name={"medium"} value={data.medium} onChange={handleChange} />
-                        <h3>How many large dogs?</h3>
+                        <div className='question'>How many large dogs?</div>
                         <Input name={"large"} value={data.large} onChange={handleChange} />
-                        <h3>Any leftover from last month?(lb)</h3>
+                        <div className='question'>Amount of leftover food from last month?(lb)</div>
                         <Input name={"leftOver"} value={data.leftOver} onChange={handleChange} />
                         <button className='button' type={"submit"} data-testid="calculate-button">Calculate</button>
                     </form>
